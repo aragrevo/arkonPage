@@ -5,15 +5,22 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Web Page</title>
-	<!--<link rel="stylesheet" href="http://kendo.cdn.telerik.com/2019.2.619/styles/kendo.common.min.css">-->
-	<!--<link rel="stylesheet" href="http://kendo.cdn.telerik.com/2019.2.619/styles/kendo.default.min.css">-->
-	<link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+	<title>ArKon Arquitectura</title>
+	<link rel="icon" type="image/vnd.microsoft.icon" href="images/favicon.ico">
 	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+
+	<!--Bootstrap 4 cdn-->
+	<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+	<link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/litera/bootstrap.min.css" rel="stylesheet" integrity="sha384-D/7uAka7uwterkSxa2LwZR7RJqH2X6jfmhkJ0vFPGUtPyBMF2WMq9S+f9Ik5jJu1" crossorigin="anonymous">
+	<!--Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" integrity="sha384-rtJEYb85SiYWgfpCr0jn174XgJTn4rptSOQsMroFBPQSGLdOC5IbubP6lJ35qoM9" crossorigin="anonymous">
+
+	<link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+	
 	<link rel="stylesheet" type="text/css" href="css/imgeffect.css" />
 
 	<script src="js/jquery.min.js"></script>
-	<!--<script src="http://kendo.cdn.telerik.com/2019.2.619/js/kendo.all.min.js"></script>-->
+
 
 	<!-- start gallery Script -->
 
@@ -96,383 +103,126 @@
 </head>
 
 <body>
-	<!----start-header----------->
-	<header class="header_bg">
-		<div class="wrap">
-			<div class="header">
-				<!--------start-logo------>
-				<div class="logo">
-					<a href="index.html"><img src="images/logo.png" alt="" /></a>
+	<!----start-nav-------->
+	<nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
+		<div class="container">
+			<!--------start-logo------>
+			<div class="logo">
+				<a href="index.html" class="navbar-brand"><img src="images/logo.png" alt="" /></a>
+			</div>
+			<!--------end-logo--------->
+			<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<ul class="navbar-nav ml-auto text-white">
+					<li class="nav-item"><a href="#home" class="nav-link">Inicio</a></li>
+					<li class="active nav-item"><a href="#portfolio" class="scroll nav-link">Servicios</a></li>
+					<li class="nav-item"><a href="#about" class="scroll nav-link">Nosotros</a></li>
+					<li class="nav-item"><a href="#contact" class="scroll nav-link">Contacto</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-----end-nav-------->
+
+	<!----start-home----------->
+	<header id="home">
+		<div class="wrap dark-overlay">
+			<div class="home-inner">
+				<!-- start slider -->
+				<div class="slider_bg">
+					<div class="wrap">
+						<!---start-da-slider----->
+						<div class="da-slide">
+							<h2><span>We Build</span>Brand</h2>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. when an unknown printer
+								took a galley of type and scrambled it to make a type specimen book.</p>
+							<a href="#" class="da-link">Learnmore</a>
+							<a href="#portfolio" class="scroll"><span class="da-img"></span> </a>
+						</div>
+						<!---//End-da-slider----->
+					</div>
 				</div>
-				<!--------end-logo--------->
-				<!----start-nav-------->
-				<nav class="nav">
-					<ul>
-						<li><a href="#home">Home</a></li>
-						<li class="active"><a href="#portfolio" class="scroll">Portfolio</a></li>
-						<li><a href="#about" class="scroll">About</a></li>
-						<li><a href="#contact" class="scroll">Contact</a></li>
-						<div class="clear"> </div>
-					</ul>
-				</nav>
-				<!-----end-nav-------->
-				<div class="clear"> </div>
+				<!-----end-slider-------->
 			</div>
 		</div>
 	</header>
-	<!------end-header------------>
-	<!-- start slider -->
-	<section class="slider_bg">
-		<div class="wrap">
-			<!---start-da-slider----->
-			<div class="da-slide">
-				<h2><span>We Build</span>Brand</h2>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. when an unknown printer
-					took a galley of type and scrambled it to make a type specimen book.</p>
-				<a href="#" class="da-link">Learnmore</a>
-				<a href="#portfolio" class="scroll"><span class="da-img"> </span> </a>
-			</div>
-			<!---//End-da-slider----->
-		</div>
-	</section>
-	<!-----end-slider-------->
-	<!--start portfolio------>
-	<section class="wrap" id="portfolio">
-		<div class="main">
-			<!-- start gallery  -->
-			<div class="gallery1">
-				<!--start-mfp -->
-				<div id="small-dialog1" class="mfp-hide">
-					<div class="pop_up">
-						<h2>Lorem ipsum sit amet</h2>
-						<img src="images/icon1.png" alt="" />
-						<p class="para">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-							doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
-							quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
-							sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-							voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
-						</p>
-					</div>
-				</div>
-				<!--end-mfp -->
-				<!---start-content----->
-				<div class="gallery">
-					<div class="clear"> </div>
-					<div class="container">
-						<h2>Portfolio</h2>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-						<ul id="filters" class="clearfix">
-							<li><span class="filter active" data-filter="app card icon logo web">All</span></li>
-							<li><span class="filter" data-filter="app web">Web Design</span></li>
-							<li><span class="filter" data-filter="icon web card">Graphic Design</span></li>
-							<li><span class="filter" data-filter="web app icon card">Flat Design</span></li>
-						</ul>
-						<div id="portfoliolist">
+	<!------end-home------------>
 
-							<div class="portfolio logo" data-cat="logo">
-								<div class="portfolio-wrapper">
-									<a class="popup-with-zoom-anim" href="#small-dialog1">
-										<ul class="ch-grid">
-											<li>
-												<div class="ch-item ch-img-1">
-													<div class="ch-info">
-														<img src="images/zoom-white.png" />
-														<h3>Example Title</h3>
-														<p><a href="#">Wed Desing</a></p>
-													</div>
-												</div>
-											</li>
-										</ul>
-									</a>
-								</div>
-							</div>
-
-							<div class="portfolio app" data-cat="app">
-								<div class="portfolio-wrapper">
-									<a class="popup-with-zoom-anim" href="#small-dialog1">
-										<ul class="ch-grid">
-											<li>
-												<div class="ch-item ch-img-2">
-													<div class="ch-info">
-														<img src="images/zoom-white.png" />
-														<h3>Example Title</h3>
-														<p><a href="#">Wed Desing</a></p>
-													</div>
-												</div>
-											</li>
-										</ul>
-									</a>
-								</div>
-							</div>
-							<div class="hide">
-								<div class="portfolio web" data-cat="web">
-									<div class="portfolio-wrapper">
-										<a class="popup-with-zoom-anim" href="#small-dialog1">
-											<ul class="ch-grid">
-												<li>
-													<div class="ch-item ch-img-3">
-														<div class="ch-info">
-															<img src="images/zoom-white.png" />
-															<h3>Example Title</h3>
-															<p><a href="#">Wed Desing</a></p>
-														</div>
-													</div>
-												</li>
-											</ul>
-										</a>
-									</div>
-								</div>
-							</div>
-
-							<div class="portfolio card" data-cat="card">
-								<div class="portfolio-wrapper">
-									<a class="popup-with-zoom-anim" href="#small-dialog1">
-										<ul class="ch-grid">
-											<li>
-												<div class="ch-item ch-img-4">
-													<div class="ch-info">
-														<img src="images/zoom-white.png" />
-														<h3>Example Title</h3>
-														<p><a href="#">Wed Desing</a></p>
-													</div>
-												</div>
-											</li>
-										</ul>
-									</a>
-								</div>
-							</div>
-
-							<div class="hide">
-								<div class="portfolio app" data-cat="app">
-									<div class="portfolio-wrapper">
-										<a class="popup-with-zoom-anim" href="#small-dialog1">
-											<ul class="ch-grid">
-												<li>
-													<div class="ch-item ch-img-5">
-														<div class="ch-info">
-															<img src="images/zoom-white.png" />
-															<h3>Example Title</h3>
-															<p><a href="#">Wed Desing</a></p>
-														</div>
-													</div>
-												</li>
-											</ul>
-										</a>
-									</div>
-								</div>
-							</div>
-							<div class="hide">
-								<div class="portfolio card" data-cat="card">
-									<div class="portfolio-wrapper">
-										<a class="popup-with-zoom-anim" href="#small-dialog1">
-											<ul class="ch-grid">
-												<li>
-													<div class="ch-item ch-img-6">
-														<div class="ch-info">
-															<img src="images/zoom-white.png" />
-															<h3>Example Title</h3>
-															<p><a href="#">Wed Desing</a></p>
-														</div>
-													</div>
-												</li>
-											</ul>
-										</a>
-									</div>
-								</div>
-							</div>
-							<div>
-								<div class="portfolio card" data-cat="card">
-									<div class="portfolio-wrapper">
-										<a class="popup-with-zoom-anim" href="#small-dialog1">
-											<ul class="ch-grid">
-												<li>
-													<div class="ch-item ch-img-7">
-														<div class="ch-info">
-															<img src="images/zoom-white.png" />
-															<h3>Example Title</h3>
-															<p><a href="#">Wed Desing</a></p>
-														</div>
-													</div>
-												</li>
-											</ul>
-										</a>
-									</div>
-								</div>
-							</div>
-							<div>
-								<div class="portfolio logo" data-cat="logo" id="hide">
-									<div class="portfolio-wrapper">
-										<a class="popup-with-zoom-anim" href="#small-dialog1">
-											<ul class="ch-grid">
-												<li>
-													<div class="ch-item ch-img-8">
-														<div class="ch-info">
-															<img src="images/zoom-white.png" />
-															<h3>Example Title</h3>
-															<p><a href="#">Wed Desing</a></p>
-														</div>
-													</div>
-												</li>
-											</ul>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div><!-- container -->
-					<script type="text/javascript" src="js/fliplightbox.min.js"></script>
-					<script type="text/javascript">$('body').flipLightBox()</script>
-					<div class="clear"> </div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!---End-gallery----->
-	<!-----start-about-------->
-
-	<section class="about" id="about">
-		<div class="wrap">
-			<h2>About US</h2>
-			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-			<div class="about-grids">
-				<div class="grid">
-					<div class="dc_zoom_css">
-						<span class="roll_css6">
-							<div class="social">
-								<ul>
-									<li><a class="sharefacebook" href="#"> </a> </li>
-									<li><a class="sharetwitter" href="#"> </a> </li>
-									<li><a class="sharetgoogle" href="#"> </a> </li>
-									<li><a class="sharedrible" href="#"> </a> </li>
-									<div class="clear"> </div>
-								</ul>
-							</div>
-						</span>
-						<img class="post-person" src="images/img1.jpg">
-					</div>
-					<div class="desc">
-						<h3>Lorem Ipsum is Simply</h3>
-						<p>project manager</p>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Sed ut perspiciatis
-							unde omnis iste natus error sit voluptatem,Sed ut perspiciatis unde omnis iste natus error
-							sit voluptatem.</p>
-					</div>
-
-				</div>
-				<div class="grid">
-					<div class="dc_zoom_css">
-						<span class="roll_css6">
-							<div class="social">
-								<ul>
-									<li><a class="sharefacebook" href="#"> </a> </li>
-									<li><a class="sharetwitter" href="#"> </a> </li>
-									<li><a class="sharetgoogle" href="#"> </a> </li>
-									<li><a class="sharedrible" href="#"> </a> </li>
-									<div class="clear"> </div>
-								</ul>
-							</div>
-						</span>
-						<img class="post-person" src="images/img2.jpg">
-					</div>
-					<div class="desc">
-						<h3>Lorem Ipsum is Simply</h3>
-						<p>project manager</p>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Sed ut perspiciatis
-							unde omnis iste natus error sit voluptatem,Sed ut perspiciatis unde omnis iste natus error
-							sit voluptatem.</p>
-					</div>
-				</div>
-				<div class="grid">
-					<div class="dc_zoom_css">
-						<span class="roll_css6">
-							<div class="social">
-								<ul>
-									<li><a class="sharefacebook" href="#"> </a> </li>
-									<li><a class="sharetwitter" href="#"> </a> </li>
-									<li><a class="sharetgoogle" href="#"> </a> </li>
-									<li><a class="sharedrible" href="#"> </a> </li>
-									<div class="clear"> </div>
-								</ul>
-							</div>
-						</span>
-						<img class="post-person" src="images/img3.jpg">
-					</div>
-					<div class="desc">
-						<h3>Lorem Ipsum is Simply</h3>
-						<p>project manager</p>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Sed ut perspiciatis
-							unde omnis iste natus error sit voluptatem,Sed ut perspiciatis unde omnis iste natus error
-							sit voluptatem.</p>
-					</div>
-				</div>
-				<div class="clear"> </div>
-			</div>
-		</div>
-	</section>
-	<!---------end-about------------->
 	<section class="contact" id="contact">
 		<div class="wrap">
-			<h2>Contact Us</h2>
+			<h2>Contactenos</h2>
 			<h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h4>
-			<div class="section group">
-				<div class="col span_2_of_3">
-					<div class="contact-form">
-						<form method="post" action="#">
-
-							<input type="text" class="textbox" value="Your Name" onfocus="this.value = '';"
-								onblur="if (this.value == '') {this.value = 'Your  Name';}">
-							<input type="text" class="textbox" value="Your Email" onfocus="this.value = '';"
-								onblur="if (this.value == '') {this.value = 'Your Email';}">
-							<div class="clear"> </div>
-
-							<div>
-								<textarea value="Your Message:" onfocus="this.value = '';"
-									onblur="if (this.value == '') {this.value = 'Your Message';}">Your Message...</textarea>
+			<div class="row">
+				<div class="col-8">
+					<form action="#" class="p-1">
+						<div class="form-row py-2">
+							<div class="col-3">
+								<select class="custom-select">
+									<option selected>Tipo </option>
+									<option value="">Natural</option>
+									<option value="">Juridica</option>
+								</select>
 							</div>
-							<span><input type="submit" class="" value="Submit"></span>
-							<div class="clear"></div>
-						</form>
-					</div>
-				</div>
-				<div class="col span_1_of_3">
-					<div class="company_address">
-						<h5>INFORMATION</h5>
-						<ul class="list3">
-							<li>
-								<img src="images/location.png" alt="" />
-								<div class="extra-wrap">
-									<p>Lorem ipsum consectetu</p>
-									<p>12345-Lorem ipsum consectetu</p>
-									<p>Lorem ipsum , consectetu</p>
-								</div>
-								<div class="clear"> </div>
-							</li>
 
-							<li>
-								<img src="images/phone.png" alt="" />
-								<div class="extra-wrap">
-									<p>+1 800(Phone) 258 2598</p>
-								</div>
-								<div class="clear"> </div>
-							</li>
-							<li>
-								<img src="images/fax2.png" alt="" />
-								<div class="extra-wrap">
-									<p>+1 500(Tax) 6343 8690</p>
-								</div>
-								<div class="clear"> </div>
-							</li>
-							<li>
-								<img src="images/mail.png" alt="" />
-								<div class="extra-wrap">
-									<p> <a href="mailto:info@mycompany.com"> info(at)appstore.com</a></p>
-								</div>
-								<div class="clear"> </div>
-							</li>
-						</ul>
+							<div class="col">
+								<input type="text" class="form-control" value="Nombre Institución o Persona" onfocus="this.value = '';"
+									onblur="if (this.value == '') {this.value = 'Nombre Institución o Persona';}" required>
+							</div>
+						</div>
+
+						<div class="form-row py-2">
+							<div class="col-7">
+								<input type="email" class="form-control" value="Email" onfocus="this.value = '';"
+									onblur="if (this.value == '') {this.value = 'Email';}" required>
+							</div>
+							<div class="col">
+								<input type="tel" class="form-control" value="Tel de Contacto" onfocus="this.value = '';"
+									onblur="if (this.value == '') {this.value = 'Tel de contacto';}">	
+							</div>
+						</div>
+
+						<div class="py-3">
+							<textarea value="Comentarios:" onfocus="this.value = '';"
+								onblur="if (this.value == '') {this.value = 'Comentarios';}" class="form-control" rows="5" required>Comentarios...</textarea>
+						</div>
+						<input type="submit" class="btn btn-success float-right" value="Enviar">
+					</form>
+				</div>
+				<div class="col-4">
+					<div class="company_address py-3">
+						<div class="card border-light mb-3">
+							<div class="card-body">
+								<h4 class="card-title">INFORMACIÓN</h4>
+								<ul class="list-group list-group-flush">
+									<li class="list-group-item">
+										<h5 class="card-subtitle mb-2 text-muted">
+											<span><i class="fas fa-map-marker-alt"></i></span> Dirección
+										</h5>
+									
+										<p class="card-text">Cl 128. Bogotá, Colombia</p>
+									</li>
+	
+									<li class="list-group-item">
+										<h5 class="card-subtitle mb-2 text-muted">
+											<span><i class="fas fa-phone-alt"></i></span> Teléfono
+										</h5>
+										<p class="card-text ">+57 311 XXXX</p>
+									</li>
+									
+									<li class="list-group-item">
+										<h5 class="card-subtitle mb-2 text-muted">
+											<span><i class="fas fa-envelope"></i></span> Email
+										</h5>
+										<a href="mailto:hv.gtecnico.arkon@gmail.com" class="card-link ">hv.gtecnico.arkon@gmail.com</a>
+									</li>
+								</ul>
+
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="clear"></div>
 			</div>
 		</div>
 	</section>
@@ -500,6 +250,10 @@
 			<script src="js/jquery.scrollTo.js"></script>
 		</div>
 	</footer>
+	<!-- Bootstrap 4 script-->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>
