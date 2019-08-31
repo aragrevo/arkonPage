@@ -1,134 +1,31 @@
-/* reset */
-
-/*end reset*/
-body {
-	font-family: 'Lato', sans-serif;
-	background: #ffffff;
-}
-.wrap
-{
-	width:70%;
-	margin: 0 auto;
+body{
+	font-family: 'Rubik', sans-serif !important;
 }
 
-/******start-nav********/
-.navbar {
-	opacity: .9;
+.navbar, footer {
+	opacity: .8;
 }
 
-.navbar-collapse > ul > li > a {
-	font-family: 'Lato', sans-serif;
-	text-transform: uppercase;
-	-webkit-transition: 0.9s;
-	-moz-transition: 0.9s;
-	-o-transition: 0.9s;
-	transition: 0.9s;
+#home, #portfolio {
+	min-height: 100vh;
+	
 }
-/************end-nav***********/
-/* start slider */
+
 #home {
 	background:  url('../images/banner.jpg') no-repeat;
-	min-height: 100vh;
 	background-size: cover;
 	background-attachment: fixed;
 }
 
-.dark-overlay {
-	background-color: rgba(0, 0, 0, .6);
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	min-height: 100%;
-}
-
-.home-inner {
-	padding-top: 150px;
-}
-
-.da-slide {
+.home-slide {
 	padding: 11% 0%;
 }
 
-.da-slide h2 {
-	color: #FFF;
-	font-size: 3em;
-	font-weight: 700;
-	z-index: 10;
-	text-align: center;
+.arrow {
+	font-size: 2.5em;
+	color: rgba(0, 0, 0, .5)
 }
 
-.da-slide h2 span {
-	font-size: 1em;
-	font-weight: 300;
+.arrow:hover {
+	color: #b4babf;
 }
-
-.da-slide p {
-	color: #FFF;
-	font-size: 1.4em;
-	text-align: center;
-	margin: 1.5em auto;
-	width: 77%;
-	font-weight: 300;
-	line-height: 1.4em;
-}
-
-.da-slide .da-link {
-	background-color: #1BBC9B;
-	display: block;
-	color: #FFF;
-	font-size: 1em;
-	text-transform: uppercase;
-	margin: 0 auto;
-	width: 10%;
-	text-align: center;
-	padding: 1em 2em;
-}
-
-.da-slide .da-link:hover
-{
-	background:#01CAA1;
-	text-decoration: none;
-}
-
-.da-img{
-	width: 50px;
-	height: 50px;
-	display: block;
-	margin: 2em auto 1em;
-	background: url(../images/buttonimg.png);
-	-webkit-transition: all 0.4s ease-in-out;
-	-moz-transition: all 0.4s ease-in-out;
-	-o-transition: all 0.4s ease-in-out;
-	-ms-transition: all 0.4s ease-in-out;
-	transition: all 0.4s ease-in-out;
-}
-
-.da-img:hover{
-	width: 50px;
-	height: 50px;
-	display: block;
-	background: url(../images/buttonimgh.png);
-}
-
-.contact {
-	background: #EBEBEB;
-}
-
-.contact h2{
-	color:#444444;
-	font-size:2em;
-	padding: 2em 0em 0.7em 0em;
-	text-align: center;
-}
-
-.contact h4{
-	color:#444;
-	font-size:1em;
-	text-align: center;
-}
-.contact h5{
-	color:#444;
-	font-size:1em;
-}
-
