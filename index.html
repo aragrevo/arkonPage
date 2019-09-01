@@ -16,9 +16,11 @@
 	<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,400i,500" rel="stylesheet">
 
 	<!--CSS Bootstrap -->
+	
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
 
 	<!--CSS Custom -->
+	<link href="css/_reboot.scss" rel="stylesheet" type="text/css" media="all" />
 	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 	
 </head>
@@ -73,18 +75,68 @@
 	
 		<!----start-portfolio---->
 		<section id="portfolio">
-			<div class="container">
-		
+			<div class="container">		
 				<!----start content---->
 				<div class="row justify-content-center text-center">
-					<div class="container py-5">
-						<h2 class="text-center display-4">Servicios</h2>
-						<ul id="filters" class="clearfix list-group list-group-horizontal text-center">
-							<li class="list-group-item list-group-item-action"><span class="filter">TODOS</span></li>
-							<li class="list-group-item list-group-item-action"><span class="filter">ASESORIA</span></li>
-							<li class="list-group-item list-group-item-action"><span class="filter">DISEÑO</span></li>
-							<li class="list-group-item list-group-item-action"><span class="filter">ACONDICIONAMIENTO</span></li>
-							<li class="list-group-item list-group-item-action"><span class="filter">GESTIÓN</span></li>
+					<div class="col-12 col-md-9 col-lg-8">
+						<span class="title-decorative">ARKON Arquitectura Integral</span>
+						<h2 class="display-4">Servicios</h2>
+						<span class="lead mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi aut ab, ducimus tempora asperiores alias.</span>
+					</div>
+				</div>
+				<div class="row justify-content-around">
+					<div class="col-md-5 col-7 mb-4 m-auto">
+						<div class="tab-content">
+							<div class="tab-pane fade active show" id="content-1" role="tabpanel">
+								<img src="images/Imagen1.jpg" alt="Image" class="img-fluid w-100">
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-5 col-md-8 mb-4">
+						<ul class="nav nav-cards" role="tablist">
+							<li>
+								<a href="#content-1" class="card active mb-3" data-toggle="tab" role="tab" aria-controls="content-1" aria-selected="true">
+									<div class="card-body">
+										<div class="media aling-items-center">
+											<div class="icon-circle mr-4 my-auto"><i class="fas fa-comments-dollar"></i></div>
+											<div class="media-body">
+												<h5>Aseoría en Inversión para compra de Bienes</h5>
+												<span>Usos del suelo, edificabilidad, etc.</span>
+											</div>
+										</div>
+									</div>
+							
+								</a>
+							</li>
+							<li>
+								<a href="#content-1" class="card mb-3" data-toggle="tab" role="tab" aria-controls="content-1" aria-selected="true">
+									<div class="card-body">
+										<div class="media aling-items-center">
+											
+											<div class="media-body">
+												<h5>Diseño Arquitectonico</h5>
+												<span>Interacción con el cliente para sus necesidades</span>
+											</div>
+											<div class="icon-circle ml-4 my-auto"><i class="fas fa-city"></i></div>
+										</div>
+									</div>
+							
+								</a>
+							</li>
+							<li>
+								<a href="#content-1" class="card mb-3" data-toggle="tab" role="tab" aria-controls="content-1" aria-selected="true">
+									<div class="card-body">
+										<div class="media aling-items-center">
+											<div class="icon-circle mr-4 my-auto"><i class="fas fa-drafting-compass"></i></div>
+											<div class="media-body">
+												<h5>Elaboración de Planos y estudios constructivos</h5>
+												<span>Juegos de planos y estudios interdisciplinarios para el buen desarrollo de las obras</span>
+											</div>
+										</div>
+									</div>
+							
+								</a>
+							</li>
 						</ul>
 					</div>
 				</div>
