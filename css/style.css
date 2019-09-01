@@ -5,12 +5,7 @@ body{
 .navbar, footer {
 	opacity: .8;
 }
-/*
-#home, #portfolio {
-	min-height: 100vh;
-	
-}
-*/
+
 #home {
 	background:  url('../images/banner.jpg') no-repeat;
 	background-size: cover;
@@ -48,11 +43,12 @@ body{
 	font-weight: 500;
 	padding-top: 14%
 }
-
+/*
 .nav-cards > li {
-	width: 100%;
+	width: 33%;
+	padding: 0.5%;
 }
-
+*/
 a.card {
 	color: #495057;
 }

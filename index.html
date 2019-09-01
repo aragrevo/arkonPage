@@ -20,7 +20,7 @@
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
 
 	<!--CSS Custom -->
-	<link href="css/_reboot.scss" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/_reboot.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 	
 </head>
@@ -52,7 +52,7 @@
 
 	<div class="main-container">
 		<!----start-home----------->
-		<main role="main" id="home">
+		<main role="main" id="home" class="min-vh-100">
 			<div class="col-md-8 offset-md-2">
 				<div class="py-5">
 					<div class="container py-5">
@@ -74,7 +74,7 @@
 		<!------end-home------------>
 	
 		<!----start-portfolio---->
-		<section id="portfolio">
+		<section id="portfolio" class="min-vh-100">
 			<div class="container">		
 				<!----start content---->
 				<div class="row justify-content-center text-center">
@@ -84,22 +84,22 @@
 						<span class="lead mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi aut ab, ducimus tempora asperiores alias.</span>
 					</div>
 				</div>
-				<div class="row justify-content-around">
-					<div class="col-md-5 col-7 mb-4 m-auto">
+				<div class="row justify-content-center">
+					<!--<div class="col-md-5 col-7 mb-4 m-auto">
 						<div class="tab-content">
 							<div class="tab-pane fade active show" id="content-1" role="tabpanel">
-								<img src="images/Imagen1.jpg" alt="Image" class="img-fluid w-100">
+								<img src="images/Imagen5.jpg" alt="Image" class="img-fluid w-100">
 							</div>
 						</div>
-					</div>
-					<div class="col-lg-5 col-md-8 mb-4">
-						<ul class="nav nav-cards" role="tablist">
-							<li>
-								<a href="#content-1" class="card active mb-3" data-toggle="tab" role="tab" aria-controls="content-1" aria-selected="true">
+					</div>-->
+					<div class="mb-4">
+						<ul class="nav " role="tablist">
+							<li class="float-sm-left col-lg-4 mb-3">
+								<a href="#content-1" class="card active h-100" data-toggle="tab" role="tab" aria-controls="content-1" aria-selected="true">
 									<div class="card-body">
-										<div class="media aling-items-center">
+										<div class="media aling-items-center h-100">
 											<div class="icon-circle mr-4 my-auto"><i class="fas fa-comments-dollar"></i></div>
-											<div class="media-body">
+											<div class="media-body my-auto">
 												<h5>Aseoría en Inversión para compra de Bienes</h5>
 												<span>Usos del suelo, edificabilidad, etc.</span>
 											</div>
@@ -108,8 +108,8 @@
 							
 								</a>
 							</li>
-							<li>
-								<a href="#content-1" class="card mb-3" data-toggle="tab" role="tab" aria-controls="content-1" aria-selected="true">
+							<li class="float-sm-left col-lg-4 mb-3">
+								<a href="#content-1" class="card mb-3 h-100" data-toggle="tab" role="tab" aria-controls="content-1" aria-selected="true">
 									<div class="card-body">
 										<div class="media aling-items-center">
 											
@@ -123,8 +123,8 @@
 							
 								</a>
 							</li>
-							<li>
-								<a href="#content-1" class="card mb-3" data-toggle="tab" role="tab" aria-controls="content-1" aria-selected="true">
+							<li class="float-sm-left col-lg-4 mb-3">
+								<a href="#content-1" class="card h-100" data-toggle="tab" role="tab" aria-controls="content-1" aria-selected="true">
 									<div class="card-body">
 										<div class="media aling-items-center">
 											<div class="icon-circle mr-4 my-auto"><i class="fas fa-drafting-compass"></i></div>
@@ -132,6 +132,75 @@
 												<h5>Elaboración de Planos y estudios constructivos</h5>
 												<span>Juegos de planos y estudios interdisciplinarios para el buen desarrollo de las obras</span>
 											</div>
+										</div>
+									</div>
+							
+								</a>
+							</li>
+							<li class="float-sm-left col-lg-4">
+								<a href="#content-1" class="card mb-3" data-toggle="tab" role="tab" aria-controls="content-1" aria-selected="true">
+									<div class="card-body">
+										<div class="media aling-items-center">	
+											<div class="media-body">
+												<h5>Gestión de permiso de las instituciones reguladoras</h5>
+												<span>Curaduria, servicios publicos, habitad, etc</span>
+											</div>
+											<div class="icon-circle mr-4 my-auto"><i class="fas fa-shield-alt"></i></div>
+										</div>
+									</div>
+							
+								</a>
+							</li>
+							<li class="float-sm-left col-lg-4">
+								<a href="#content-1" class="card mb-3" data-toggle="tab" role="tab" aria-controls="content-1" aria-selected="true">
+									<div class="card-body">
+										<div class="media aling-items-center">
+											<div class="icon-circle ml-4 my-auto"><i class="fas fa-paint-roller"></i></div>
+											<div class="media-body">
+												<h5>Actualización y renovación de inmuebles</h5>
+												<span>Adecuaciones, remodelaciones, reforzamientos estructurales, etc</span>
+											</div>
+										</div>
+									</div>
+							
+								</a>
+							</li>
+							<li class="float-sm-left col-lg-4">
+								<a href="#content-1" class="card mb-3" data-toggle="tab" role="tab" aria-controls="content-1" aria-selected="true">
+									<div class="card-body">
+										<div class="media aling-items-center">
+											
+											<div class="media-body">
+												<h5>Modelado y visualización de proyectos</h5>
+											</div>
+											<div class="icon-circle mr-4 my-auto"><i class="fas fa-tasks"></i></div>
+										</div>
+									</div>
+							
+								</a>
+							</li>
+							<li class="float-sm-left col-lg-4">
+								<a href="#content-1" class="card mb-3" data-toggle="tab" role="tab" aria-controls="content-1" aria-selected="true">
+									<div class="card-body">
+										<div class="media aling-items-center">
+											<div class="icon-circle mr-4 my-auto"><i class="fas fa-wheelchair"></i></div>
+											<div class="media-body">
+												<h5>Revisión y acondicionamiento de edificaciones para uso de discapacitados</h5>
+											</div>
+										</div>
+									</div>
+							
+								</a>
+							</li>
+							<li class="float-sm-left col-lg-4">
+								<a href="#content-1" class="card mb-3" data-toggle="tab" role="tab" aria-controls="content-1" aria-selected="true">
+									<div class="card-body">
+										<div class="media aling-items-center">
+											
+											<div class="media-body">
+												<h5>Gerencia y construccion de edificaciones</h5>
+											</div>
+											<div class="icon-circle mr-4 my-auto"><i class="fas fa-hard-hat"></i></div>
 										</div>
 									</div>
 							
