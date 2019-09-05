@@ -71,3 +71,37 @@ a.card:hover {
 	padding: 0 !important;
 	border-bottom: none !important;
 }
+/*
+.feature-list {
+	margin-bottom: 0; }
+	.feature-list > li {
+	  margin-bottom: 3rem; }
+	.feature-list.feature-list-sm > li {
+	  margin-bottom: 1.5rem; }
+	.feature-list:not(:last-child):not(.row) {
+	  margin-bottom: 1.5rem; }
+	.feature-list > li[class*='col'] {
+	  display: flex;
+	  flex-direction: column; }
+	  .feature-list > li[class*='col'] .card {
+		flex-grow: 1; }
+  
+  @media (min-width: 576px) {
+	.feature-list.feature-list-lg > li {
+	  margin-bottom: 4.5rem; } }
+  
+  @media (min-width: 992px) {
+	.feature-list.feature-list-xlg > li {
+	  margin-bottom: 7.5rem; }
+	  .feature-list.feature-list-xlg > li:last-child {
+		margin-bottom: 0; } }
+  
+  @media (max-width: 767.98px) {
+	.feature-list > li {
+	  margin-bottom: 1.5rem; }
+	  .feature-list > li .img-fluid {
+		margin-bottom: 1.5rem; } }
+  
+  .feature-list > li > .card:only-child {
+	margin-bottom: 0; }
+*/
