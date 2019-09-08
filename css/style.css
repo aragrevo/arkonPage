@@ -43,12 +43,10 @@ body{
 	font-weight: 500;
 	padding-top: 14%
 }
-/*
-.nav-cards > li {
-	width: 33%;
-	padding: 0.5%;
+
+.title-decorative span {
+	color: #ffc107;
 }
-*/
 a.card {
 	color: #495057;
 }
